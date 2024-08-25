@@ -1,0 +1,21 @@
+.tag_scroll_section{
+    height: 100vh;
+    .tag_wrapper{
+        width: 100%;
+        overflow-x: hidden;
+
+        .tag_line{
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            .tag{
+                padding: 20px 26px;
+                border-radius: 800px;
+                font-size: 28px;
+                color: #000000;
+                background-color: #dde5f1;
+                text-wrap: nowrap;
+            }
+        }
+    }
+}

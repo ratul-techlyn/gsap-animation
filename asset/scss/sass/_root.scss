@@ -1,0 +1,51 @@
+
+// $color-white: ;
+// $color-orange: ;
+// $color-light: ;
+
+// $bg-color-dark: ;
+// $bg-color-light: ;
+
+// $font-link:  ;
+// $font-heading: ;
+// $font-fancy:  ;
+// $font-pera:  ;
+
+// $font-bold: ;
+// $font-semibold: ;
+// $font-bolder: ;
+
+$font-size-normal: 15px;
+$font-size-medium: 20px;
+$font-size-learge: 25px;
+
+// @mixin heading1 {
+
+// }
+
+.imgbox_full,
+.imgbox{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.imgbox_full{
+    height: 100%;
+    img{
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.spacer{
+    height: 1000px;
+}
+
+@function flexWidth($cardCount, $gap) {
+    @return calc(100% / $cardCount - (($gap * ($cardCount - 1)) / $cardCount));
+}

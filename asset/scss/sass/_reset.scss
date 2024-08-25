@@ -1,0 +1,67 @@
+* {
+    cursor: default;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: #fff;
+    color: #000;
+    position: static;
+    scroll-behavior: smooth;
+}
+
+select,
+input,
+button:focus {
+    outline: none;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+section {
+    .content_wrapper {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .git_button{
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 45px;
+
+            &, & *{
+                cursor: pointer;
+            }
+        }
+    }
+
+    .git_button{
+        font-size: 65px;
+        text-align: center;
+        display: block;
+
+        &, & *{
+            cursor: pointer;
+        }
+    }
+}

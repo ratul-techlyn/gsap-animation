@@ -1,0 +1,30 @@
+.scrollig_grid_section {
+    height: 100vh;
+    
+    .grid_content {
+        overflow: hidden;
+        width: 100%;
+        height: 70vh;
+
+
+        .grid_wrapper {
+            width: 90%;
+            height: 100%;
+            display: flex;
+            gap: 20px;
+            transform: translateX(36%) skew(-35deg, 10deg);
+
+            .grid_column {
+                width: flexWidth(3, 20px);
+
+                .grid {
+                    width: 100%;
+                    aspect-ratio: 1/1;
+                    border-radius: 40px;
+                    background-color: #1f374f;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
